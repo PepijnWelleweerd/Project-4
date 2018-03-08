@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<title>Colicss</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="website.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+</style>
+<body>
+
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+  <img src="Afbeeldingen/Logo2.PNG" class= Margin-right style="width:20%;max-width:70px">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block">Homepagina</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block">Algemeen</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block">Pakketten</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block">Klantenpagina</a>
+    </div>
+     <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header>
+       <img src="Afbeeldingen/Logo2.PNG" alt="Paris" onClick="fifo()" class="w3-marginja w3-margintop5" style="width:100%; max-width:1000px"> 
+</header>
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Welkom op onze website!</span></h5>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+</div>
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64 w3-margintop"><span class="w3-tag w3-wide">Algemeen</span></h5>
+    <p>Wij Colicss zijn een innovatief en vernieuwend bedrijf uit Slagharen dat zich vooral bezighouden met hosting en sinds kort ook de cloud. Ons bedrijf gaat onder leiding van Rob Sieljes al een poos flink voor de wind en zijn binnen twee jaar gegroeid van een eenmanszaak naar een bedrijf met zes man personeel.</p>
+<br>
+    <p>Onlangs hebben we nog een prijs gewonnen voor beste innovatie binnen de hosting door samen te werken met het Alfa-college. In dit project hebben studenten van het Alfa-college een hostingomgeving opgezet met daarop een testwebsite. Het panel van deze prijs vond de samenwerking zo gaaf, dat we de prijs beste innovatie hebben gewonnen.</p>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-64 w3-margintop2"><span class="w3-tag w3-wide">Pakketten</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Cloudpakketten</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Hostingpakketten</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+            <h3>Cloudpakketten:</h3><br>
+                <h5>Pakket Geel:</h5>
+                <p class="w3-text-grey">10 GB opslag (4 euro per maand)</p>
+                            <input type="button" class="w3-black" value="Deze wil ik!" onClick="rekentool();">
+                <h5>Pakket Oranje:</h5>
+                <p class="w3-text-grey">100 GB opslag (6 euro per maand)</p>    
+                            <input type="button"  class="w3-black" value="Deze wil ik!" onClick="rekentool3();"> 
+                <h5>Pakket Groen:</h5>
+                <p class="w3-text-grey">1 TB opslag (10 euro per maand)</p>          
+                            <input type="button"  class="w3-black" value="Deze wil ik!" onClick="rekentool4();">  
+      </div>
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+            <h3>Hostingpakketten:</h3><br>
+            <h5>Pakket Brons:</h5>
+            
+            <p class="w3-text-grey">10 GB HDD, 512MB RAM, 1 Core, 100 GB dataverkeer per maand <br>
+            (5,95 euro per maand)</p>
+                                        <input type="button"  class="w3-black" value="Deze wil ik!" onClick="rekentool2();"> 
+            <br>
+           
+            <h5>Pakket Silver:</h5>
+            
+            <p class="w3-text-grey">20 GB HDD, 1048MB RAM, 2 Cores, 200 GB dataverkeer per maand <br>
+            (7,95 euro per maand)</p>
+                                        <input type="button"  class="w3-black" value="Deze wil ik!" onClick="rekentool5();"> 
+            <br>
+           
+            <h5>Pakket Goud:</h5>
+            
+            <p class="w3-text-grey">50 GB HDD, 2048MB RAM, 4 Cores, onbeperkt dataverkeer per maand 
+            <br> (10,95 euro per maand)</p>
+
+                                         <input type="button"  class="w3-black" value="Deze wil ik!" onClick="rekentool6();"> 
+
+
+
+    </div>  
+
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64 w3-margintop3"><span class="w3-tag w3-wide">Klantenpagina</span></h5>
+   <div class="column1of3">
+       
+        <bold><h3>Aldi Hardenberg</h3></bold>
+          <a href="https://www.aldi.nl/"  target="_blank"><img src="Afbeeldingen/aldi.png" title="Aldi Hardenberg" height="125px" width="125px" border="5px"></a>
+
+
+   </div>
+    <div class="column2of3">
+
+        <bold><h3>Plus Hardenberg</h3></bold>
+          <a href="https://www.plus.nl/"  target="_blank"><img src="Afbeeldingen/plus.png" title="Plus Hardenberg" height="125px" width="125px" border="5px"></a>
+
+
+  </div>
+    <div class="column3of3">
+
+        <bold><h3>Lidl Hardenberg</h3></bold>
+          <a href="https://www.lidl.nl/nl/index.htm" target="_blank"><img src="Afbeeldingen/lidl.png" title="Lidl Hardenberg" height="125px" width="125px" border="5px"></a>
+  </div>
+</div>
+</div>
+
+<div style="clear: left;">
+  </div>
+</div>
+
+<div class="w3-container" id="contact" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64 w3-margintop4"><span class="w3-tag w3-wide">Contact</span></h5>
+    <div class="column1of3">
+        
+    <strong><h3>Vind ons op social media!</h3></strong>
+    <a href="https://www.instagram.com/colicss.slagharen/"  target="_blank"><img src="Afbeeldingen/instagram.png" title="Instagram"  height="125px" width="125px" border="5px"></a>
+
+    <a href="https://twitter.com/ColicssHosting"  target="_blank"><img src="Afbeeldingen/twitter.png" title="Twitter" height="125px" width="125px" border="5px"></a>
+
+    <a href="https://www.facebook.com/Colicss-1797632710564062/?fref=mentions"  target="_blank"><img src="Afbeeldingen/facebook.png" title="Facebook" height="125px" width="125px" border="5px"></a>
+
+
+
+    </div>
+    <div class="column2of3">
+    <strong><h3>Neem contact met ons op</h3> </strong> 
+    <form method="GET" action="">
+
+   <strong><label>Bedrijf</label></strong> 
+    <br>
+    <input name="bedrijf" type="text" autofocus required />
+    <br>
+    <br>
+    
+   <strong><label>Naam </label></strong> 
+    <br>
+    <input name="Naam"type="text" required />
+    <br>
+    <br>
+    
+   <strong> <label> E-mail </label></strong> 
+    <br>
+    <input name="mail" type="email" required />
+    <br>
+    <br>
+    
+    <strong><label> Website </label></strong> 
+    <br>
+    <input name="url"type="url" />
+    <br>
+    <br>
+    
+  <strong><label> Telefoon <small> 10 cijfers </small></label></strong> 
+    <br>
+    <input name="telefoon" type="number" required />
+    <br>
+    <br>
+    
+    <strong><label> Postcode </label></strong>
+    <br>
+    <input name="pc" type="text" pattern=" [0-9] {4} [a-z, A-Z] {2}" required />
+    <br>
+    <br>
+    
+    
+    
+      <input name="zenden" type="submit" value="verstuur" />
+
+    
+    <form>
+                      
+    </div>
+    <DIV class="column3of3">
+     <strong>  <p><h3>
+      Contactgegevens:</h3><br></strong> 
+      Colicss <br>
+      Herenstraat 24 <br>
+      7776 AG, Slagharen <br>
+      06 -12412498 <br>
+      KVK: 05076893</p>
+    </div>    
+  </div>
+</div>
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <h6>Copyright Pepijn Welleweerd</h6>
+</footer>
+
+<script>
+
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+
+</body>
+</html>
+
+  <script src="website.js" rel="text/javascript"></script>

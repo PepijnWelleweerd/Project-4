@@ -1,0 +1,7 @@
+//Javascript voor Colicss//
+
+	function Geel(){
+ 
+ 	alert("Foutmelding")
+
+	}
